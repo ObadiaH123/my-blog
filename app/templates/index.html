@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% block styles%} {{ super() }}
+
+<link rel="stylesheet" href="../static/css/index.css"> 
+
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="container">  
+
+      <div class="jumbotron text-center" style= "background-color: #431620; color:white; padding: 5px;">
+        <h2>Do you have a powerful blog and you don't know what to do?</h2>
+        <p>We got you! </p>
+        <p>Sign up to and publish whatever you want here!</p>
+      </div>
+        <hr>
+        <div class="row">
+                 
+              <div style="font-size: 16px;" class="col-md-6">
+                <h3 style="color:black">Random Quotes:</h3>
+               {% for quote in getquotes %}
+               <p style="color:maroon">{{quote.quote}}</p>
+               <p style="color:black">{{quote.author}}</p>
+               {% endfor %}
+           
+             </div>
+             
+
+             <div class="col-md-4">
+              <br>
+                <a href="../blog/" class="btn btn-primary btn-md">Post a Blog</a>
+                <a href="{{url_for('main.category')}}" class="btn btn-primary btn-md">View published blogs</a>
+  
+              </div>
+           
+     </div>
+     <div class="row">
+      <div class="col-md-6" > 
+        <h3 class="" id="card">Subscribe to our newsletter</h3>
+        <p><b><u><button class="btn btn-danger btn-lg" style="color:#fff"><a href="/Subscribe">Subscribe</a></button></u></b></p>
+      </div> 
+      </div>
+ 
+
+     </div>
+     <hr>
+    
+       
+    {% endblock%}
