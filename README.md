@@ -1,5 +1,5 @@
 Blog Website
-#### Author: [Kelvinrono](https://github.com/kelvinrono)
+#### Author: [Benard Kiprotich Bett](https://github.com/kelvinrono)
 ## Description
 This application enables individual to read different blogs written by different people. Also one can register as the writed and will be posting blogs 
 As a user of the web application you will be able to:
