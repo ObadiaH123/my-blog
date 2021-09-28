@@ -25,7 +25,7 @@ As the writer, you will be able to
 * pip
 #### Clone the Repo and rename it to suit your needs.
 ```bash
-git clone https://github.com/kelvinrono/blog
+git clone https://github.com/ObadiaH123/my-blog.git
 ```
 #### Initialize git and add the remote repository
 ```bash
